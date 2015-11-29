@@ -5,6 +5,9 @@
 	<classpathentry kind="con" path="org.lejos.ev3.ldt.LEJOS_EV3_LIBRARY_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/mcrosbie/Dropbox/dropbox-java-sdk-1.7.7/lib/jackson-core-2.2.4.jar"/>
 	<classpathentry kind="lib" path="/Users/mcrosbie/Dropbox/dropbox-java-sdk-1.7.7/lib/dropbox-core-sdk-1.7.7.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/Users/mcrosbie/git/code/ev3classes/ev3classes.jar"/>
+=======
+>>>>>>> e072866a4d6cbeb896f5ba6d05fed18a37390eb4
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="lib/base/minim/jl1.0.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/minim/jsminim.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/minim/minim.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/minim/mp3spi1.9.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/minim/tritonus_aos.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/minim/tritonus_share.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/serial/RXTXcomm.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/serial/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/serial"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/serial/serial.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/serial/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/base/serial"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/jl1.0.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/jsminim.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/minim-spi.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/minim.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/mp3spi1.9.4.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/tritonus_aos.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/minim/tritonus_share.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/minim/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/minim/doc/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/minim"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/oscP5/oscP5.jar" sourcepath="/Users/mcrosbie/Dropbox/Processing/libraries/oscP5/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/mcrosbie/Dropbox/Processing/libraries/oscP5/reference/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="SoundMachineController/lib/user/oscP5"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="core.jar"/>
+	<classpathentry kind="lib" path="SoundCipher.jar"/>
+	<classpathentry kind="lib" path="pccomm.jar"/>
+	<classpathentry kind="lib" path="controlP5.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

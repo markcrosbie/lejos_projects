@@ -38,8 +38,13 @@ import com.dropbox.core.json.JsonReader;
  */
 public class ImageCapture extends Thread {
 
+<<<<<<< HEAD
 	private final int WIDTH = 160;
 	private final int HEIGHT = 120;
+=======
+	private final int WIDTH = 320;
+	private final int HEIGHT = 240;
+>>>>>>> e072866a4d6cbeb896f5ba6d05fed18a37390eb4
 	private int NUM_PIXELS = WIDTH * HEIGHT;
 	private int FRAME_SIZE = NUM_PIXELS * 2;
 	private final int CAPTURE_FREQUENCY = 10000; // milliseconds
