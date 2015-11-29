@@ -6,7 +6,8 @@ import lejos.hardware.Button;
 import lejos.hardware.lcd.GraphicsLCD;
  
  public class CameraTest {
-     public static void main(String[] args) {
+     
+	 public static void main(String[] args) {
          try {
              Video wc = BrickFinder.getDefault().getVideo();
              wc.open(160,120);
