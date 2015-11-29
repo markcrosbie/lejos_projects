@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;OpenCVTesting&apos;" deleteContents="false" description="Delete resource &apos;OpenCVTesting&apos;" element1="/OpenCVTesting" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1448797618662"/>
-</session>
