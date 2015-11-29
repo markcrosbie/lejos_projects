@@ -1,0 +1,65 @@
+import lejos.hardware.Button;
+import lejos.hardware.Sound;
+import lejos.hardware.lcd.LCD;
+import lejos.hardware.motor.*;
+import lejos.hardware.port.MotorPort;
+import lejos.robotics.RegulatedMotor;
+
+import org.opencv.core.*;
+
+/**
+ * Friendly is a robot who tries to look at you and keep your face in front of the camera
+ * He likes seeing people.
+ * 
+ * @author mcrosbie
+ *
+ */
+public class Friendly {
+
+	static FaceDetector fd;	
+	static EV3LargeRegulatedMotor left, right;
+	
+	public static void main(String[] args) {
+
+		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+
+		LCD.clear();
+		LCD.drawString("Friendly", 0, 0);
+		left = new EV3LargeRegulatedMotor(MotorPort.B);
+		right = new EV3LargeRegulatedMotor(MotorPort.C);
+		
+		left.setSpeed(400);
+		right.setSpeed(400);
+		
+		try {
+			fd = new FaceDetector();
+			fd.run();
+		} catch(Exception e) {
+			Sound.buzz();
+			System.err.println("Exception: " + e.getMessage());
+		}
+		
+		System.out.println("Running");
+		while(Button.ESCAPE.isUp()) {
+			
+			if(fd.faceDetected()) {
+				Point p = fd.getFaceCenter(0);
+				System.out.println("Face center: " + p.x + ","+p.y);
+				if(p.x < 70) {
+					LCD.drawString("LEFT  ", 0, 2);
+					Sound.playTone(400, 100);
+				} else if(p.x > 90) {
+					LCD.drawString("RIGHT ", 0, 2);
+					Sound.playTone(4800, 100);
+				} else {
+					LCD.drawString("CENTER", 0, 2);
+				}				
+			}
+		}
+		
+		left.stop();
+		right.stop();
+	}
+
+}
+

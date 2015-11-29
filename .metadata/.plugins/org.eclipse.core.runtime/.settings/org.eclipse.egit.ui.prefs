@@ -1,0 +1,2 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Renamed &\#x0A;</message>\n<message>Ready to push</message>\n<message>Initial versions</message>\n<message>Some cleanups on the code.</message>\n<message>Renamed file for clarity</message>\n<message>Detects face in the image stream and says if it is left or right.&\#x0A;Draws a rectangle around the face.&\#x0A;Streams jpg to the web browser.</message>\n<message>Initial test from the lejos news website</message>\n</messages>
+eclipse.preferences.version=1

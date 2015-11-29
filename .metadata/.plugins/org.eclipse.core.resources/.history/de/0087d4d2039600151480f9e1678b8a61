@@ -1,0 +1,47 @@
+import lejos.hardware.Button;
+import lejos.hardware.Sound;
+import lejos.hardware.lcd.LCD;
+import lejos.hardware.motor.*;
+import lejos.hardware.port.MotorPort;
+import lejos.robotics.RegulatedMotor;
+
+/**
+ * Friendly is a robot who tries to look at you and keep your face in front of the camera
+ * He likes seeing people.
+ * 
+ * @author mcrosbie
+ *
+ */
+public class Friendly {
+
+	static FaceDetector fd;	
+	static EV3LargeRegulatedMotor left, right;
+	
+	public static void main(String[] args) {
+
+		LCD.clear();
+		LCD.drawString("Friendly", 0, 0);
+		left = new EV3LargeRegulatedMotor(MotorPort.B);
+		right = new EV3LargeRegulatedMotor(MotorPort.C);
+		
+		left.setSpeed(400);
+		right.setSpeed(400);
+		
+		try {
+			fd = new FaceDetector();
+			fd.run();
+		} catch(Exception e) {
+			Sound.buzz();
+			System.err.println("Exception: " + e.getMessage());
+		}
+		
+		while(Button.ESCAPE.isUp()) {
+			
+		}
+		
+		left.stop();
+		right.stop();
+	}
+
+}
+

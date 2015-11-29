@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="ev3pcclasses" basedir="." default="pc.files">
+    <target name="pc.files">
+		<echo message="Nothing to do"/>
+	</target>
+</project>

@@ -1,0 +1,85 @@
+<project name="org.lejos.ev3.pcexample" default="run">
+	<description>
+    	org.lejos.ev3.pcexample.HelloWorld build file
+    </description>
+
+	<!-- set properties for this build -->
+	<property environment="env" />
+	<property file="build.properties" />
+
+	<!-- define the search paths -->
+	<path id="libraries.path">
+		<fileset dir="${ev3.home}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- deletes generated files -->
+	<target name="clean" description="clean up all generated files">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<target name="compile" depends="clean" description="compile the source ">
+		<!-- Compile the java code from ${source.dir} to ${classes.dir}  -->
+		<mkdir dir="${classes.dir}" />
+		<javac
+			srcdir="${source.dir}"
+			includes="${source.include}"
+			excludes="${source.exclude}"
+			encoding="${source.encoding}"
+			source="${source.version}"
+			target="${target.version}"
+			destdir="${classes.dir}"
+			debug="true"
+			includeAntRuntime="false"
+			includeJavaRuntime="false"
+			verbose="false"
+		>
+			<classpath refid="libraries.path" />
+			<!-- enable warnings -->
+			<compilerarg value="-Xlint:${source.warn}" />
+		</javac>
+	</target>
+
+	<target name="run" description="run the debug tool" depends="compile">
+		<java classname="${main.class}" fork="true" failonerror="true">
+			<sysproperty key="ev3.home" file="${ev3.home}"/>
+			<classpath refid="libraries.path" />
+			<classpath location="${classes.dir}" />
+		</java>
+	</target>
+	
+	<!-- generate javadocs -->
+	<target name="docs" description="generate javadocs">
+		<delete dir="${docs.dir}" />
+    	<mkdir dir="${docs.dir}" />
+		<javadoc
+			destdir="${docs.dir}"
+			source="${source.version}"
+			encoding="${source.encoding}"
+			charset="utf-8"
+			locale="en_US"
+			author="true"
+			access="protected"
+			windowtitle="Project documentation"
+			verbose="false"
+		>
+			<classpath refid="libraries.path" />
+			
+			<packageset	dir="${source.dir}"
+				includes="${source.include}"
+				excludes="${source.exclude}"
+			/>
+		</javadoc>
+	</target>
+
+	<!-- zip the project -->
+	<target name="dist.zip" description="generate zip of sources">
+    	<zip
+    		destfile="${dist.zip}"
+    		basedir="${basedir}"
+    		includes="${dist.include}"
+    		excludes="${dist.exclude}"
+    	/>
+	</target>
+</project>
