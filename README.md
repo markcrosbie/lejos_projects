@@ -7,6 +7,7 @@ What's here?
 
 ### leJOS WebCam fun
 
+* OpenCVTesting - code to grab images from a webcam, detect faces in the images and then stream that back to a web connection
 * SurveillanceCam - Surveillance Camera demo code that uses the leJOS webcam support to capture a frame and overlay the current date/time and battery voltage level, and then save to Dropbox
 * CameraTest - simple example of capturing video from a webcam in leJOS and drawing it on the LCD screen on the EV3
 * DisplayStreamingVideo - code from the leJOS tutorials to display a streaming video stream from the webcam on the EV3 in a Java application window
@@ -16,4 +17,3 @@ What's here?
 ### Older Projects
 
 * SpaceInvaders - my Space Invaders projects where you play the game using an EV3 
-* 
